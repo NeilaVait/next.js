@@ -1,16 +1,12 @@
 import { server } from './../config/index';
-
-import Head from 'next/head';
 import ArticleList from './../components/ArticleList';
+import Meta from './../components/Meta';
 
 export default function Home({ articles }) {
   console.log(articles);
   return (
     <div>
-      <Head>
-        <title>Next</title>
-        <meta name="keywords" content="web development, programming" />
-      </Head>
+      <Meta />
 
       <ArticleList articles={articles} />
     </div>
